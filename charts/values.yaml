@@ -5,6 +5,10 @@ image:
   tag: v20250426211451
   pullPolicy: IfNotPresent
 
+ingress:
+  enabled: true
+  host: test.local
+
 service:
   type: LoadBalancer
   port: 80
