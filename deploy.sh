@@ -3,7 +3,7 @@ set -e
 
 # CONFIG
 IMAGE_NAME="henrsand/app-for-argo"
-GIT_VALUES_FILE="charts/app-for-argo-deployment.yaml"  # path to your Helm values.yaml
+GIT_VALUES_FILE="charts/values.yaml"  # path to your Helm values.yaml
 NEW_TAG="v$(date +%Y%m%d%H%M%S)"  # generates a tag like v20250426094000
 
 # Build and push the Docker image
