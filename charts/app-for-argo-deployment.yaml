@@ -14,8 +14,8 @@ spec:
         app: app-for-argo
     spec:
       containers:
-      - image: henrsand/app-for-argo:latest
+      - image: henrsand/app-for-argo:v20250426200611
         name: app-for-argo
-        tag: "v20250426200240"
+        tag: "v20250426200611"
         ports:
         - containerPort: 80
