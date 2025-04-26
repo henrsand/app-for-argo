@@ -12,7 +12,7 @@ docker push $IMAGE_NAME:$NEW_TAG
 
 # Update values.yaml
 echo "Updating $GIT_VALUES_FILE with new tag: $NEW_TAG"
-sed -i.bak "s/tag: .*/tag: \"$NEW_TAG\"/" $GIT_VALUES_FILE
+sed -i "s/tag: .*/tag: \"$NEW_TAG\"/" $GIT_VALUES_FILE
 
 # Commit and push the change
 git add $GIT_VALUES_FILE
