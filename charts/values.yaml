@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: henrsand/app-for-argo
-  tag: v20250426210000
+  tag: v20250426210105
   pullPolicy: IfNotPresent
 
 service:
