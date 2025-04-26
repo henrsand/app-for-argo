@@ -1,0 +1,5 @@
+apiVersion: v2
+name: app-for-argo
+description: A Helm chart for deploying app-for-argo with blue-green support
+version: 0.1.0
+appVersion: "1.0"

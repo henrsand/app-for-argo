@@ -1,0 +1,17 @@
+replicaCount: 1
+
+image:
+  repository: henrsand/app-for-argo
+  tag: v20250426201054
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+deployment:
+  revisionHistoryLimit: 3
+
+appLabels:
+  app: app-for-argo
+  version: blue   # <-- for blue-green deployment

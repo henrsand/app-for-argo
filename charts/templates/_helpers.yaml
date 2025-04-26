@@ -1,0 +1,14 @@
+{{/*
+Return the full name of the app.
+*/}}
+{{- define "app-for-argo.fullname" -}}
+{{- printf "%s" .Release.Name -}}
+{{- end }}
+
+{{/*
+Return selector labels.
+*/}}
+{{- define "app-for-argo.selectorLabels" -}}
+app: {{ .Values.appLabels.app }}
+version: {{ .Values.appLabels.version }}
+{{- end }}
