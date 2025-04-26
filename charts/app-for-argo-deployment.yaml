@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-for-argo
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: app-for-argo
+  template:
+    metadata:
+      labels:
+        app: app-for-argo
+    spec:
+      containers:
+      - image: henrsand/app-for-argo:latest
+        name: app-for-argo
+        ports:
+        - containerPort: 80
